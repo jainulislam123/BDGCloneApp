@@ -194,7 +194,7 @@ loginweb.addEventListener("submit", (e) => {
     document.querySelector(".loadingImg").style.display = "block";
     loginweb.querySelector("#NotMatchPassuser").innerHTML = "";
     setTimeout(() => {
-      window.location = "/allPage/HomePage.html";
+      window.location = "HomePage.html";
       document.querySelector(".loadingImg").style.display = "none";
     }, 3000);
   } else {
