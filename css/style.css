@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppin", sans-serif;
+}
+:root {
+  --main-color: #43b2ea;
+  --grey: #9b9191ec;
+}
+body {
+  background-color: #9195a3;
+}
+.container {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.columnDiv {
+  width: 100%;
+  height: auto;
+  background-color: #f7f8ff;
+
+  position: relative;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  padding: 10px 20px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  & .gtrhe {
+    font-weight: 700;
+    color: #6e6b6bfd;
+    cursor: pointer;
+  }
+}
+.logo img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+.langu {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  color: grey;
+}
+.registerMsg {
+  background: linear-gradient(90deg, #43b2ea, #a5dbea);
+  color: white;
+  padding: 20px;
+  margin-top: 60px;
+  & h2 {
+    font-size: 20px;
+  }
+  & p {
+    font-size: 13px;
+    padding: 5px 0;
+  }
+}
+.registionSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--grey);
+  padding: 20px 20px 2px;
+  cursor: pointer;
+  & .PhoneIcon,
+  .emailIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.1rem;
+    object-fit: cover;
+    font-size: 20px;
+    width: 50%;
+    border-bottom: solid 2px grey;
+  }
+}
+.phoneText,
+.emailText {
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+.activeColor {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color) !important;
+}
+.hideShow {
+  width: 100%;
+}
+.registerForm {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px 0 0;
+  color: black;
+  & i {
+    color: var(--main-color);
+  }
+  & input {
+    padding: 13px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    &::placeholder {
+      color: #8b8787b0;
+      font-size: 15px;
+    }
+  }
+}
+form {
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+}
+form div {
+  padding: 10px;
+}
+form .name span {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding-bottom: 5px;
+  gap: 1rem;
+}
+.ConfiPass {
+  position: relative;
+}
+.ConfiPass span#PassWordMatch {
+  position: absolute;
+  color: red;
+  top: 50%;
+  right: 4%;
+}
+.selecAndPhone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  & select {
+    border: none;
+    background-color: transparent;
+  }
+}
+.termCondtion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  & input[type="checkbox"] {
+    width: 20px;
+    accent-color: #43b2ea;
+  }
+  & span {
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  & button {
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid #43b2ea;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    color: var(--main-color);
+  }
+}
+#registerBtn {
+  background: linear-gradient(90deg, #43b2ea, #a5dbea);
+  color: white;
+}
+.support {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  height: 146px;
+}
+.forgot,
+.contactSuport {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+  color: grey;
+  gap: 0.2rem;
+  & span {
+    font-size: 30px;
+    padding: 30px;
+  }
+}
+.loginBtn2 {
+  background: linear-gradient(90deg, #43b2ea, #a5dbea);
+  color: white !important;
+}
+.loginForm {
+  display: none;
+}
+.loadingImg {
+  display: none;
+}
+.loadingImg img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 5px solid var(--main-color);
+  box-shadow: -1px 1px 6px 2px #90cae7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: round linear 2s infinite;
+}
+@keyframes round {
+  0% {
+    border-left: 5px solid white;
+  }
+  20% {
+    border-top: 5px solid white;
+  }
+  40% {
+    border-right: 5px solid white;
+  }
+  80% {
+    border-bottom: 5px solid white;
+  }
+}
+#NotMatchPassuser {
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  line-height: 35px;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  /* padding: 5px 30px; */
+}
+/* reponsiveDesign */
+
+.containerRemove {
+  transform: scale(0);
+  background: url("https://media.licdn.com/dms/image/v2/D4D12AQF5W580vSdETw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700904144255?e=1758153600&v=beta&t=TlGOPiMNdqs34xGXfHNslY45L-k_PKDXMMt-7v52tPA")
+    center no-repeat !important;
+}
+.containerAdd {
+  transform: scale(1);
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BDG International</title>
+    <link rel="icon" href="./Images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2cdbd7af32.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Column DivStart -->
+      <div class="columnDiv">
+        <!-- HeaderStart -->
+        <div class="header">
+          <div class="gtrhe">&lt;</div>
+          <div class="logo">
+            <img src="./Images/logo.png" alt="" />
+          </div>
+          <div class="langu">
+            <img src="./Images/langu.jpg" width="30px" /> &nbsp;<span>
+              IND</span
+            >
+          </div>
+        </div>
+        <!-- HeaderEnd -->
+
+        <!-- RegisterMassage -->
+        <div class="registerMsg">
+          <h2>Register</h2>
+          <p>Please register by phone number</p>
+        </div>
+        <!-- RegisterMassage -->
+
+        <!-- RegisterSection -->
+        <div class="registionSection">
+          <div class="PhoneIcon activeColor">
+            <span><i class="fa-solid fa-tablet-screen-button"></i></span>
+            <span class="phoneText">Phone Number</span>
+          </div>
+          <div class="emailIcon">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <span class="emailText">Email Account</span>
+          </div>
+        </div>
+        <!-- RegisterSection -->
+
+        <!-- RegisterFrom -->
+        <div class="registerForm">
+          <div class="loadingImg">
+            <img src="./Images/jainul.jpg" alt="" srcset="" />
+            <h2 style="text-align: center; color: green"></h2>
+          </div>
+          <div class="hideShow">
+            <form id="formSubmit">
+              <div class="name">
+                <span><i class="fa-solid fa-user"></i> Name</span>
+                <input type="text" id="UserName1" placeholder="Name" required />
+              </div>
+              <div class="phoneNumber name">
+                <span
+                  ><i class="fa-solid fa-tablet-screen-button"></i> Phone Number
+                </span>
+                <div class="selecAndPhone">
+                  <select name="select" id="selectOption">
+                    <option value="">+91</option>
+                    <option value="">+23</option>
+                    <option value="">+1</option>
+                    <option value="">+911</option>
+                    <option value="">+088</option>
+                    <option value="">+011</option>
+                    <option value="">+1268</option>
+                    <option value="">+81</option>
+                  </select>
+                  <input
+                    type="text"
+                    name="number"
+                    pattern="[7-9]{1}[0-9]{9}"
+                    title="Phone number with 7-9 and remaing 9 digit with 0-9"
+                    id="numberId1"
+                    placeholder="please enter your phone number"
+                    maxlength="10"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="email name" style="display: none">
+                <span><i class="fa-solid fa-envelope"></i>Email</span>
+                <input
+                  type="email"
+                  name="UserEmail"
+                  id="emailId1"
+                  placeholder="please enter the email"
+                />
+              </div>
+              <div class="setPass name">
+                <span><i class="fa-solid fa-lock"></i> Set Password</span>
+                <input
+                  type="password"
+                  name="Setpassword"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  id="SetPassword"
+                  maxlength="10"
+                  placeholder="Set Password"
+                  required
+                />
+              </div>
+
+              <div class="ConfiPass name">
+                <span><i class="fa-solid fa-lock"></i> Confirm Password</span>
+                <input
+                  type="password"
+                  name="ConfirmPassword"
+                  id="ConfirmPassword"
+                  maxlength="10"
+                  placeholder="Confirm  Password"
+                  required
+                />
+                <span id="PassWordMatch"></span>
+              </div>
+              <div class="Invite name">
+                <span><i class="fa-solid fa-cash-register"></i> Invite</span>
+                <input
+                  type="text"
+                  name="invite"
+                  id="invite"
+                  value="SAHEB100"
+                  maxlength="10"
+                  placeholder="Invited Code"
+                />
+              </div>
+              <div class="termCondtion">
+                <input type="checkbox" name="tremCon" id="tremCon" required />
+                <span
+                  >I have read & agree
+                  <i style="color: #43b2ea">[Privacy Agreement]</i></span
+                >
+              </div>
+              <div class="buttons">
+                <button type="submit" id="registerBtn">Register</button>
+                <button type="button" id="loginBtn">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- RegisterEnd -->
+
+        <!-- LoginFrom -->
+        <div class="loginForm registerForm">
+          <form id="loginweb">
+            <h3 id="NotMatchPassuser"></h3>
+            <div class="phoneNumber2 name">
+              <span
+                ><i class="fa-solid fa-tablet-screen-button"></i> Phone Number
+              </span>
+              <input
+                type="text"
+                name="number2"
+                id="NumberId2"
+                placeholder="please enter your phone number"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="email2 name">
+              <span><i class="fa-solid fa-envelope"></i> Email </span>
+              <input
+                type="email"
+                name="LoginEmail"
+                id="emailId2"
+                placeholder="please enter your email"
+                maxlength="10"
+              />
+            </div>
+            <div class="name">
+              <span><i class="fa-solid fa-lock"></i> Password</span>
+              <input
+                type="password"
+                name="password"
+                id="passId2"
+                maxlength="10"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <div class="buttons">
+              <button type="submit" class="loginBtn2" id="loginBtn2">
+                Login
+              </button>
+              <button type="button" class="registerBtn2" id="registerBtn2">
+                Register
+              </button>
+            </div>
+          </form>
+          <div class="support">
+            <div class="forgot">
+              <span><i class="fa-solid fa-lock-open"></i> </span>forgot Password
+            </div>
+            <div class="contactSuport">
+              <span><i class="fa-solid fa-headset"></i> </span>Contact Support
+            </div>
+          </div>
+        </div>
+        <!-- LoginFrom -->
+      </div>
+      <!-- Column DivEnd -->
+    </div>
+    <!-- container DivEnd -->
+  </body>
+  <script src="./js/login.js"></script>
+</html>
