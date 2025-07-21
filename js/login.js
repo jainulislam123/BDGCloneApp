@@ -194,7 +194,7 @@ loginweb.addEventListener("submit", (e) => {
     document.querySelector(".loadingImg").style.display = "block";
     loginweb.querySelector("#NotMatchPassuser").innerHTML = "";
     setTimeout(() => {
-      window.location = "https://jainulislam123.github.io/HomePage.html";
+      window.location = "homePage.html";
       document.querySelector(".loadingImg").style.display = "none";
     }, 3000);
   } else {
