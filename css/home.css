@@ -277,7 +277,7 @@ body .modal2 {
   justify-content: space-between;
   flex-wrap: wrap;
   & .box2 {
-    width: 116px;
+    width: 106px;
     height: 90px;
     border-radius: 12px;
     & img {
