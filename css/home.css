@@ -316,11 +316,12 @@ body .modal2 {
     object-position: center;
   }
   &.box2 {
-    background-image: url("/Images/gbg2.png");
+    background-image: url("/Images/gbg1.png");
     background-size: cover;
     object-position: center;
   }
 }
+
 .popularlotarry .singleBox {
   background-image: url("/Images/gbg3.png");
   background-size: cover;
